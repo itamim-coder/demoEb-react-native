@@ -1,22 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Home from './src/screen/Home/Home'
-import Profile from './src/screen/Profile/Profile'
+import { View, Text } from 'react-native'
+import React from 'react'
+import OnBoard from './src/screen/OnBoard/OnBoard'
+import OnBoardControl from './src/screen/OnBoard/OnBoardControl'
 
-export default function App() {
+const App = () => {
   return (
-    <View>
-      {/* <Home/> */}
-      {/* <Profile/> */}
-    </View>
-  );
+  <OnBoardControl></OnBoardControl>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App
