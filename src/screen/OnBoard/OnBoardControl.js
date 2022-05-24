@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 import OnBoard from './OnBoard';
 import Home from '../Home/Home';
+import Login from '../Authentication/Login/Login';
 
 const OnBoardControl = () => {
     const [showOnBoard, setShowOnBoard] = useState(true);
@@ -12,7 +13,7 @@ const OnBoardControl = () => {
   return (
     <>
     {showOnBoard &&   <OnBoard handleDone={handleOnBoardFinish}/>}
-    {!showOnBoard &&   <Home/>}
+    {!showOnBoard &&   <Login/>}
     </>
   )
 }

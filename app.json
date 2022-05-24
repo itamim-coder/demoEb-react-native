@@ -17,13 +17,25 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "host.exp.exponent",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.372446808511-in2sb88lu76kmrt179pbtccthl9phijj"
+        } 
+      }
+   
+
     },
     "android": {
       "adaptiveIcon": {
+     
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "host.exp.exponent"
+     
+
     },
     "web": {
       "favicon": "./assets/favicon.png"

@@ -28,7 +28,7 @@ const data = [
 const OnBoard = (props) => {
   const  renderItem = ({item}) => {
     return (
-       <View style={styles.slide}>
+       <View style={styles.slide }>
        <Image source={item.image} style={styles.image}></Image>
        <View>
          <Text style={styles.title}>{item.title}</Text>
