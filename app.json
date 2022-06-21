@@ -1,7 +1,9 @@
 {
   "expo": {
-    "name": "demoEb",
-    "slug": "demoEb",
+    "name": "Demo EB",
+    "slug": "demo-Eb",
+    "privacy": "public",
+    "description": "This App is under development",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

@@ -14,6 +14,7 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import AllJobs from './src/screen/AllJobs/AllJobs';
 import PostTask from './src/screen/PostTask/PostTask';
+import Details from './src/screen/AllJobs/Details';
 
 Entypo.loadFont();
 MaterialCommunityIcons.loadFont();
@@ -62,11 +63,10 @@ const App = () => {
         <Stack.Screen name="SignUp" component={Signup} />
         <Stack.Screen name="TabNavigator" component={TabNavigator}  />
         <Stack.Screen name="AllJobs" component={AllJobs}  />
-        <Stack.Screen name="PostTask" component={PostTask}  />
-        {/* 
-        <Stack.Screen name="Details" component={Details} />
-        <Stack.Screen name="OrderForm" component={OrderForm} />
-        <Stack.Screen name="MyOrder" component={MyOrder} /> */}
+        <Stack.Screen name="Details" component={Details}  />
+        <Stack.Screen name="PostTask" component={PostTask}  />      
+      
+
       </Stack.Navigator>
   </NavigationContainer>
    

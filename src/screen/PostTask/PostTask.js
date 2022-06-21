@@ -30,7 +30,7 @@ console.log(email)
        data.category = category;
     //    data.price = price;
     //   data.destinationName = destination;
-       fetch("https://localhost:8000/jobs",{
+       fetch("https://fast-shelf-30203.herokuapp.com/jobs",{
             method: "POST",
             headers: {"content-type": "application/json"},
             body: JSON.stringify(data),            

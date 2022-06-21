@@ -1,4 +1,4 @@
-import { SafeAreaView, SafeAreaViewBase,Image, StyleSheet, Text, TextInput, View, Pressable } from 'react-native'
+import { SafeAreaView, SafeAreaViewBase,Image, StyleSheet, Text, TextInput, View, Pressable, FlatList, ScrollView } from 'react-native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -7,6 +7,7 @@ const Home = ({navigation}) => {
   
   return (
   <SafeAreaView style={styles.container}>
+    <ScrollView>
     <SafeAreaView style={styles.header}>
       <View style={styles.headerWrapper}>
        <View>
@@ -25,6 +26,24 @@ const Home = ({navigation}) => {
       </View>
     </View>
     <View>
+      <Image style={styles.banner}  source={require('../../../assets/banner.png')}/>     
+    </View>
+
+    <View>
+      <Text>Recent Errands</Text>
+      <View style={[styles.recent, {
+      // Try setting `flexDirection` to `"row"`.
+      flexDirection: "row"
+    }]}>
+      <Image source={require('../../../assets/appliance.png')}/>
+      <Image source={require('../../../assets/appliance.png')}/>
+      <Image source={require('../../../assets/appliance.png')}/>
+      <Image source={require('../../../assets/appliance.png')}/>
+      </View>
+      
+    
+    </View>
+    <View>
       <Pressable onPress={()=>{
         navigation.navigate("AllJobs")
       }
@@ -38,6 +57,7 @@ const Home = ({navigation}) => {
         </View>
       </Pressable>
     </View>
+    </ScrollView>
 
   </SafeAreaView>
   )
@@ -48,7 +68,7 @@ export default Home
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: '#f8fffa',
+    backgroundColor: '#f8fffa',
     // backgroundColor: '#e5dcd6',
    
   },
@@ -103,15 +123,17 @@ const styles = StyleSheet.create({
     margin: 25, 
 
   },
-  jobsimg:{
-    
+  jobsimg:{    
     height: 200,
     width: 200,
     borderRadius: 25,
     borderWidth: 0.3,
     borderColor: '#a5a5a5',
-    
-   
-
-  }
+   },
+   banner:{
+   marginLeft: 20,
+   },
+   recent:{
+     marginLeft: 15,
+   }
 })
